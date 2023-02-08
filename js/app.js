@@ -1,13 +1,16 @@
 
 let arrayDispari = [];
 let input = 0;
-for (let i = 0; i < 10; i++) {
-    while((input%2==0)){
-        input = parseInt(prompt("inserisci numero"));
+let i=0;
+while(arrayDispari.length < 10){
+    console.log('enro')
+    input = parseInt(prompt("inserisci numero"));
+    if(input%2==0){
+        arrayDispari.push(input);
     }
-    arrayDispari.push(input);
 }
 
-for(let i=0 ; i<10 ; i++){
+for(i ; i<10 ; i++){
     console.log('nella cella di memoria: '+i+' e salvata la seguente cifra: '+arrayDispari[i]);
 }
+
